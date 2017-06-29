@@ -1,0 +1,1196 @@
+@import url("https://fonts.googleapis.com/css?family=Khand:400,600,700|Roboto:400,700,700i,900|Source+Sans+Pro:400,600,700");
+@font-face {
+  font-family: 'montserratblack';
+  src: url("../fonts/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat-black-webfont.woff") format("woff"), url("../fonts/montserrat-black-webfont.ttf") format("truetype"), url("../fonts/montserrat-black-webfont.svg#montserratblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype"), url("../fonts/montserrat-light-webfont.svg#montserratlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratthin';
+  src: url("../fonts/montserrat-thin-webfont.woff2") format("woff2"), url("../fonts/montserrat-thin-webfont.woff") format("woff"), url("../fonts/montserrat-thin-webfont.ttf") format("truetype"), url("../fonts/montserrat-thin-webfont.svg#montserratthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'dk_lemon_yellow_sunregular';
+  src: url("../fonts/dk_lemon_yellow_sun-webfont.woff2") format("woff2"), url("../fonts/dk_lemon_yellow_sun-webfont.woff") format("woff"), url("../fonts/dk_lemon_yellow_sun-webfont.ttf") format("truetype"), url("../fonts/dk_lemon_yellow_sun-webfont.svg#dk_lemon_yellow_sunregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.clearfix {
+  clear: both; }
+
+.imgblock {
+  display: block; }
+
+body {
+  font-family: 'montserratblack';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: 'montserratblack';
+  font-size: 2em; }
+
+.contenido {
+  width: 960px;
+  height: 356px;
+  margin: 0 auto; }
+
+.header, .headerS, .headerR, .headerO {
+  width: 960px;
+  height: 356px; }
+  .header .caja, .headerS .caja, .headerR .caja, .headerO .caja {
+    padding: 30px 55px; }
+
+.header {
+  background: url(../img/01.jpg) no-repeat; }
+
+.headerS {
+  background: url(../img/santiago.jpg) no-repeat; }
+
+.headerR {
+  background: url(../img/01_rancagua.jpg) no-repeat; }
+
+.headerO {
+  background: url(../img/osorno-top.jpg) no-repeat; }
+
+.bigTitle {
+  font-size: 25px !important; }
+
+.strong {
+  font-family: 'montserratblack'; }
+
+.plus {
+  line-height: 23px !important;
+  font-size: 19px !important; }
+
+.alt {
+  margin-top: 13px; }
+
+.lhheight {
+  line-height: 18px;
+  padding-top: 16px !important; }
+
+.concept .concept-foto,
+.concept .section-texto {
+  height: auto;
+  float: left; }
+.concept .downImage {
+  margin-top: 106px; }
+.concept .concept-foto img {
+  display: block; }
+.concept .section-texto {
+  padding: 10px 57px; }
+  .concept .section-texto .margin-normal {
+    margin-top: 35px !important; }
+  .concept .section-texto .sector {
+    margin-top: 80px; }
+  .concept .section-texto .revista-row {
+    margin-bottom: 2.1em; }
+    .concept .section-texto .revista-row .ppading {
+      padding-top: 5px; }
+    .concept .section-texto .revista-row .ppading-ex {
+      padding-top: 5px; }
+    .concept .section-texto .revista-row #revista {
+      position: relative;
+      height: 80px; }
+      .concept .section-texto .revista-row #revista a {
+        display: block; }
+      .concept .section-texto .revista-row #revista .text-rev {
+        position: absolute;
+        background-color: #F6A623;
+        top: 10px;
+        color: #ffffff;
+        border-radius: 5px;
+        z-index: 0;
+        font-size: 10px;
+        width: 70%;
+        padding: 10px;
+        left: 52px;
+        padding-left: 30px; }
+
+.nubes {
+  background: #3669A3 url(../img/bg-nubes.png) no-repeat; }
+  .nubes .nubes-block {
+    padding: 55px; }
+    .nubes .nubes-block .nube-titulo {
+      font-family: 'Montserrat',sans-serif; }
+    .nubes .nubes-block .centroNatural {
+      font-family: 'montserratregular',arial;
+      font-size: 15px;
+      width: 34%;
+      margin: 0 auto 25px auto;
+      line-height: 22px; }
+      .nubes .nubes-block .centroNatural span {
+        font-family: 'montserratblack', arial; }
+    .nubes .nubes-block .centerC {
+      text-align: center;
+      line-height: 18px; }
+    .nubes .nubes-block .fz {
+      font-size: 14px !important;
+      line-height: 16px !important;
+      width: 82%;
+      margin: 0 auto; }
+  .nubes .line-box-box {
+    margin-top: 77px; }
+    .nubes .line-box-box .line-box .line-box-item-titulo, .nubes .line-box-box .line-box.nb .line-box-item-titulo {
+      background-color: #BDD44D;
+      color: #ffffff;
+      text-align: center;
+      height: 45px;
+      line-height: 45px;
+      font-size: 17px;
+      font-family: 'montserratblack', arial; }
+    .nubes .line-box-box .line-box.nb {
+      margin-right: 0; }
+    .nubes .line-box-box .line-box-item-texto {
+      background-color: rgba(48, 93, 145, 0.7);
+      padding: 24px 22px;
+      font-family: 'montserratregular',arial;
+      font-size: 14px;
+      line-height: 18px;
+      height: 120px;
+      text-align: center; }
+  .nubes .beneficios {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+    .nubes .beneficios .imgM {
+      margin-right: 20px; }
+    .nubes .beneficios .beneBox {
+      width: 70%;
+      text-align: left;
+      float: right; }
+      .nubes .beneficios .beneBox h3 {
+        font-family: 'montserratblack', arial;
+        font-size: 14px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 15px; }
+      .nubes .beneficios .beneBox p {
+        font-family: 'montserratregular',arial;
+        font-size: 14px;
+        text-align: left;
+        line-height: 16px; }
+
+.video img {
+  width: 100%; }
+.video .texto-caja {
+  padding: 10px 57px;
+  margin-top: 70px; }
+.video .calidad {
+  margin: 0;
+  padding: 0; }
+  .video .calidad li {
+    color: #9B9B9B;
+    font-family: 'montserratbold',sans-serif;
+    font-size: 11px;
+    text-align: left;
+    background: url(../img/arrow-green-left.png) no-repeat left center;
+    padding-left: 25px;
+    padding-top: 1px;
+    margin-bottom: 12px; }
+
+#revistas {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 30;
+  clear: both; }
+  #revistas .nuevoColor {
+    font-family: 'montserratblack',sans-serif;
+    color: #cecece !important;
+    font-size: 14px;
+    border-bottom: 1px solid #cecece !important;
+    margin: 0 0 40px 0;
+    padding-bottom: 10px;
+    font-family: 'montserratblack',sans-serif;
+    color: #cecece;
+    font-size: 14px;
+    border-bottom: 1px solid #cecece;
+    margin: 0 0 40px 0;
+    padding-bottom: 10px; }
+  #revistas p {
+    font-family: 'montserratlight',sans-serif;
+    color: #9B9B9B;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 17px; }
+  #revistas ul.listing {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    padding-left: 17px; }
+    #revistas ul.listing li {
+      text-align: left;
+      color: #9B9B9B;
+      font-weight: normal;
+      font-family: 'montserratlight',sans-serif;
+      margin-bottom: 8px;
+      font-size: 14px; }
+  #revistas .revista {
+    width: 555px;
+    float: left; }
+    #revistas .revista img {
+      width: 30%;
+      z-index: 0; }
+    #revistas .revista .cinta {
+      position: absolute;
+      z-index: -1;
+      background-color: #F6A623;
+      padding: 10px 20px;
+      top: 30px;
+      left: 120px;
+      width: 335px;
+      padding-left: 40px;
+      height: 80px;
+      border-radius: 8px; }
+      #revistas .revista .cinta .txtRevista {
+        color: #ffffff;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'montserratbold',sans-serif; }
+        #revistas .revista .cinta .txtRevista span {
+          font-size: 1.8em;
+          display: block;
+          margin-bottom: 13px; }
+    #revistas .revista .arrow {
+      position: absolute;
+      top: 163px;
+      width: 10%;
+      left: 365px; }
+
+#banner {
+  margin-bottom: 2em; }
+
+.link-revista {
+  float: left;
+  width: 25%;
+  margin-top: 2.5em; }
+  .link-revista .txtRevista {
+    font-size: 1em; }
+  .link-revista a {
+    color: #ffffff;
+    margin-top: 45px;
+    background-color: #BDD44D;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: 80% !important;
+    margin: 2em auto 0 auto; }
+
+.mapa #mapa img {
+  width: 100%; }
+
+.video-left img {
+  width: 100%; }
+.video-left .video-left-texto-center {
+  padding: 10px 45px 10px 31px;
+  margin-top: 50px; }
+
+.seguridad {
+  background: #3669A3 url(../img/bg-nubes.png) no-repeat; }
+  .seguridad .seguridad-block {
+    padding: 55px; }
+    .seguridad .seguridad-block .texto-seguridad-img {
+      text-align: right; }
+
+.alto {
+  height: 650px; }
+
+.bloque-seguridad .block-seguridad .lh {
+  font-family: 'montserratregular',arial !important;
+  line-height: 21px !important;
+  font-size: 15px !important; }
+  .bloque-seguridad .block-seguridad .lh span {
+    font-family: 'montserratblack', arial !important; }
+.bloque-seguridad .block-seguridad .texto-primario-blanco {
+  margin: 0;
+  padding: 0; }
+  .bloque-seguridad .block-seguridad .texto-primario-blanco li {
+    font-family: 'montserratregular',arial;
+    font-size: 12px;
+    text-align: left;
+    line-height: 15px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    padding-left: 25px;
+    background: url(../img/arrow-right.png) no-repeat left top; }
+    .bloque-seguridad .block-seguridad .texto-primario-blanco li span {
+      font-family: 'montserratblack', arial; }
+.bloque-seguridad .block-seguridad .imagen-pos {
+  width: 460px;
+  height: 650px;
+  position: absolute;
+  right: -40px;
+  top: -55px;
+  background: url(../img/santiago_01.jpg) no-repeat;
+  background-size: cover; }
+.bloque-seguridad .block-seguridad .imagen-osorno {
+  width: 460px;
+  height: 650px;
+  position: absolute;
+  right: -40px;
+  top: -55px;
+  background: url(../img/osorno.jpg) no-repeat;
+  background-size: cover; }
+.bloque-seguridad .block-seguridad .imagen-rancagua {
+  width: 460px;
+  height: 650px;
+  position: absolute;
+  right: -40px;
+  top: -55px;
+  background: url(../img/rancagua.jpg) no-repeat;
+  background-size: cover; }
+.bloque-seguridad .block-seguridad .imagen-pto {
+  width: 460px;
+  height: 650px;
+  position: absolute;
+  right: -40px;
+  top: -55px;
+  background: url(../img/pto-montt.jpg) no-repeat;
+  background-size: cover; }
+
+.metroplanes {
+  padding: 55px 55px 0px 55px; }
+  .metroplanes .bgc {
+    background-color: #3669A3; }
+  .metroplanes h1 {
+    color: #ffffff;
+    text-align: right; }
+    .metroplanes h1 span {
+      display: block; }
+  .metroplanes .metroplanes-box {
+    padding: 0px 50px;
+    border-right: 1px solid rgba(35, 69, 107, 0.5);
+    margin: 50px 0; }
+    .metroplanes .metroplanes-box .box-metroplanes {
+      position: relative;
+      text-align: center; }
+      .metroplanes .metroplanes-box .box-metroplanes .logs-metro {
+        text-align: center;
+        margin-bottom: 48px; }
+      .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .btn-primario {
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700 !important; }
+      .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes p {
+        font-family: 'montserratblack';
+        margin-bottom: 15px; }
+      .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans {
+        margin: 0;
+        padding: 0; }
+        .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans li {
+          display: inline-block;
+          width: 33.33333333%;
+          float: left;
+          background-color: #3E79BD;
+          padding: 10px 8px;
+          font-size: 14px;
+          height: 100px;
+          font-family: 'montserratblack', arial;
+          position: relative;
+          text-transform: uppercase; }
+          .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans li span {
+            display: block;
+            font-family: 'montserratlight';
+            text-transform: uppercase;
+            margin: 8px 0; }
+          .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans li:nth-child(2) {
+            background-color: #2F5C8F; }
+          .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans li p {
+            font-family: 'montserratlight';
+            text-transform: uppercase; }
+            .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans li p span {
+              font-family: 'montserratblack', arial;
+              display: inline-block; }
+        .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .gifcardL {
+          padding-top: 24px; }
+        .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans span.calefa {
+          font-size: 11px;
+          position: relative;
+          top: -10px; }
+        .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .arrow:after {
+          left: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(62, 121, 189, 0);
+          border-left-color: #3E79BD;
+          border-width: 10px;
+          margin-top: -10px;
+          z-index: 99; }
+          .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .arrow:after:last-child {
+            display: none; }
+        .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .arrowB {
+          padding-top: 20px; }
+          .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .arrowB:after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(62, 121, 189, 0);
+            border-left-color: #2F5C8F;
+            border-width: 10px;
+            margin-top: -10px;
+            z-index: 99; }
+            .metroplanes .metroplanes-box .box-metroplanes .box-metroplanes-planes .plans .arrowB:after:last-child {
+              display: none; }
+  .metroplanes .metroplanes-box-alt {
+    padding: 0px 50px;
+    border-left: 1px solid #315f94;
+    border-right: 1px solid #315f94;
+    margin: 50px 0; }
+    .metroplanes .metroplanes-box-alt .box-metroplanes {
+      position: relative;
+      text-align: center; }
+      .metroplanes .metroplanes-box-alt .box-metroplanes .logs-metro {
+        text-align: center;
+        margin-bottom: 48px; }
+      .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .btn-primario {
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700 !important; }
+      .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes p {
+        font-family: 'montserratblack';
+        margin-bottom: 15px; }
+      .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans {
+        margin: 0;
+        padding: 0; }
+        .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans li {
+          display: inline-block;
+          width: 33.33333333%;
+          float: left;
+          background-color: #3E79BD;
+          padding: 10px 8px;
+          font-size: 14px;
+          height: 100px;
+          font-family: 'montserratblack', arial;
+          position: relative;
+          text-transform: uppercase; }
+          .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans li span {
+            display: block;
+            font-family: 'montserratlight';
+            text-transform: uppercase;
+            margin: 8px 0; }
+          .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans li:nth-child(2) {
+            background-color: #2F5C8F; }
+          .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans li p {
+            font-family: 'montserratlight';
+            text-transform: uppercase; }
+            .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans li p span {
+              font-family: 'montserratblack', arial;
+              display: inline-block; }
+        .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .gifcardL {
+          padding-top: 24px; }
+        .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans span.calefa {
+          font-size: 11px;
+          position: relative;
+          top: -10px; }
+        .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .arrow:after {
+          left: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(62, 121, 189, 0);
+          border-left-color: #3E79BD;
+          border-width: 10px;
+          margin-top: -10px;
+          z-index: 99; }
+          .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .arrow:after:last-child {
+            display: none; }
+        .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .arrowB {
+          padding-top: 20px; }
+          .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .arrowB:after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(62, 121, 189, 0);
+            border-left-color: #2F5C8F;
+            border-width: 10px;
+            margin-top: -10px;
+            z-index: 99; }
+            .metroplanes .metroplanes-box-alt .box-metroplanes .box-metroplanes-planes .plans .arrowB:after:last-child {
+              display: none; }
+  .metroplanes .data-metroplan {
+    margin-top: 55px; }
+
+.contenido-metroplanes ul.items-metroplanes {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  float: right; }
+  .contenido-metroplanes ul.items-metroplanes li {
+    display: block;
+    color: #9B9B9B;
+    font-size: 12px;
+    font-family: 'montserratregular', arial;
+    margin-bottom: 16px; }
+  .contenido-metroplanes ul.items-metroplanes .ico-1 {
+    background: url(../img/icon-1.jpg) no-repeat left center;
+    padding-left: 48px;
+    height: 38px;
+    line-height: 16px; }
+  .contenido-metroplanes ul.items-metroplanes .ico-2 {
+    background: url(../img/icon-2.jpg) no-repeat left center;
+    padding-left: 48px;
+    height: 38px;
+    line-height: 16px; }
+  .contenido-metroplanes ul.items-metroplanes .ico-3 {
+    background: url(../img/icon-3.jpg) no-repeat left center;
+    padding-left: 48px;
+    height: 38px;
+    line-height: 38px; }
+  .contenido-metroplanes ul.items-metroplanes .ico-4 {
+    background: url(../img/icon-4.jpg) no-repeat left center;
+    padding-left: 48px;
+    height: 38px;
+    line-height: 38px; }
+  .contenido-metroplanes ul.items-metroplanes .ico-5 {
+    background: url(../img/icon-5.jpg) no-repeat left center;
+    padding-left: 48px;
+    height: 38px;
+    line-height: 38px; }
+
+.fluid-gray {
+  background-color: #EBEBEB; }
+  .fluid-gray .caja-tabla h2 {
+    color: #3669A3;
+    font-family: 'montserratbold', arial;
+    text-align: center;
+    font-size: 25px;
+    margin: 45px auto;
+    width: 50%; }
+  .fluid-gray .caja-tabla table {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px; }
+    .fluid-gray .caja-tabla table .cab {
+      background-color: #BDD44D; }
+
+.pagos .espace {
+  margin-bottom: 100px; }
+.pagos .listas-pago {
+  padding: 25px 30px;
+  border: 1px solid #3669A3; }
+  .pagos .listas-pago .titulo-lista {
+    color: #3669A3;
+    font-family: 'montserratbold', arial;
+    font-size: 12px;
+    margin-bottom: 30px; }
+  .pagos .listas-pago .presencial {
+    margin: 0;
+    padding: 0; }
+    .pagos .listas-pago .presencial li {
+      font-size: 12px;
+      color: #3669A3;
+      font-family: 'montserratbold', arial;
+      margin-bottom: 15px; }
+  .pagos .listas-pago .listarespuesta {
+    margin: 25px 0 0 0;
+    padding: 0; }
+    .pagos .listas-pago .listarespuesta li {
+      font-family: 'montserratregular',arial;
+      font-size: 10px;
+      color: #9B9B9B;
+      text-align: left;
+      margin-bottom: 15px;
+      line-height: 14px; }
+      .pagos .listas-pago .listarespuesta li:last-child {
+        margin-bottom: 0; }
+  .pagos .listas-pago .internet {
+    margin: 0;
+    padding: 0; }
+    .pagos .listas-pago .internet li {
+      margin-bottom: 20px; }
+      .pagos .listas-pago .internet li a {
+        color: #46A1DB;
+        font-family: 'montserratregular',arial;
+        font-size: 12px;
+        text-decoration: underline; }
+  .pagos .listas-pago .automatico {
+    margin: 0;
+    padding: 0; }
+    .pagos .listas-pago .automatico li {
+      font-size: 12px;
+      color: #3669A3;
+      font-family: 'montserratbold', arial;
+      margin-bottom: 15px; }
+      .pagos .listas-pago .automatico li:last-child {
+        margin-bottom: 0; }
+    .pagos .listas-pago .automatico .links-automata {
+      color: #46A1DB;
+      font-family: 'montserratregular',arial;
+      font-size: 12px;
+      text-decoration: underline; }
+
+.metroambientalistas {
+  background: url(../img/nino.jpg) no-repeat;
+  position: relative;
+  height: 876px;
+  z-index: 0; }
+  .metroambientalistas:after {
+    content: "";
+    width: 510px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(35, 69, 107, 0.5); }
+  .metroambientalistas ul.list-ambiental {
+    margin: 0;
+    padding: 0; }
+    .metroambientalistas ul.list-ambiental li {
+      font-family: 'montserratbold', arial;
+      font-size: 11px;
+      background: url(../img/arrow-green-left.png) no-repeat left center;
+      padding-left: 22px;
+      color: #ffffff;
+      height: 12px;
+      margin-bottom: 25px; }
+  .metroambientalistas .sociales {
+    width: 90%;
+    margin-top: 15px; }
+    .metroambientalistas .sociales ul {
+      margin: 0;
+      padding: 0; }
+      .metroambientalistas .sociales ul li {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding-left: 60px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+        position: relative;
+        background: #F9F9F9;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.21);
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        .metroambientalistas .sociales ul li a {
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          font-size: 13px;
+          text-decoration: none; }
+          .metroambientalistas .sociales ul li a:after {
+            content: url(../img/f.png);
+            left: 0;
+            top: 0;
+            background: #3669A3;
+            position: absolute;
+            padding: 9px 20px; }
+
+.container {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+a.tab-fixed {
+  position: fixed;
+  width: 250px;
+  height: 40px;
+  margin: 200px 0 0 815px;
+  padding: 15px 25px;
+  border-radius: 10px 10px 0 0;
+  background-color: #F6A623;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  /* Rectangle 18: */
+  box-shadow: 0 2px 33px 0 rgba(74, 73, 74, 0.6);
+  z-index: 90;
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer; }
+
+.antetitulo {
+  font-family: 'montserratblack',sans-serif;
+  color: #cecece;
+  font-size: 14px;
+  border-bottom: 1px solid #cecece;
+  margin: 0 0 40px 0;
+  padding-bottom: 10px; }
+
+.antetitulo-foto {
+  font-family: 'montserratblack',sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  border-bottom: 1px solid #ffffff;
+  margin: 15px 0 30px 0;
+  padding-bottom: 10px; }
+
+.metroplanes, .nubes, .metroambientalistas, .bggray, .quienes, .metroplan, .header, .headerS, .headerR, .headerO, .concept, .video, .mapa, .video-left, .bloque-seguridad, .contacto, .contenido-metroplanes, .tarifas, .pagos {
+  /* botones */ }
+  .metroplanes .texto-primario, .nubes .texto-primario, .metroambientalistas .texto-primario, .bggray .texto-primario, .quienes .texto-primario, .metroplan .texto-primario, .header .texto-primario, .headerS .texto-primario, .headerR .texto-primario, .headerO .texto-primario, .concept .texto-primario, .video .texto-primario, .mapa .texto-primario, .video-left .texto-primario, .bloque-seguridad .texto-primario, .contacto .texto-primario, .contenido-metroplanes .texto-primario, .tarifas .texto-primario, .pagos .texto-primario {
+    font-family: 'montserratlight',sans-serif;
+    color: #9B9B9B;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 17px; }
+    .metroplanes .texto-primario span, .nubes .texto-primario span, .metroambientalistas .texto-primario span, .bggray .texto-primario span, .quienes .texto-primario span, .metroplan .texto-primario span, .header .texto-primario span, .headerS .texto-primario span, .headerR .texto-primario span, .headerO .texto-primario span, .concept .texto-primario span, .video .texto-primario span, .mapa .texto-primario span, .video-left .texto-primario span, .bloque-seguridad .texto-primario span, .contacto .texto-primario span, .contenido-metroplanes .texto-primario span, .tarifas .texto-primario span, .pagos .texto-primario span {
+      color: #9B9B9B;
+      font-family: 'montserratbold',sans-serif; }
+  .metroplanes .texto-primario-blanco, .nubes .texto-primario-blanco, .metroambientalistas .texto-primario-blanco, .bggray .texto-primario-blanco, .quienes .texto-primario-blanco, .metroplan .texto-primario-blanco, .header .texto-primario-blanco, .headerS .texto-primario-blanco, .headerR .texto-primario-blanco, .headerO .texto-primario-blanco, .concept .texto-primario-blanco, .video .texto-primario-blanco, .mapa .texto-primario-blanco, .video-left .texto-primario-blanco, .bloque-seguridad .texto-primario-blanco, .contacto .texto-primario-blanco, .contenido-metroplanes .texto-primario-blanco, .tarifas .texto-primario-blanco, .pagos .texto-primario-blanco {
+    font-family: 'montserratlight',sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 17px; }
+    .metroplanes .texto-primario-blanco span, .nubes .texto-primario-blanco span, .metroambientalistas .texto-primario-blanco span, .bggray .texto-primario-blanco span, .quienes .texto-primario-blanco span, .metroplan .texto-primario-blanco span, .header .texto-primario-blanco span, .headerS .texto-primario-blanco span, .headerR .texto-primario-blanco span, .headerO .texto-primario-blanco span, .concept .texto-primario-blanco span, .video .texto-primario-blanco span, .mapa .texto-primario-blanco span, .video-left .texto-primario-blanco span, .bloque-seguridad .texto-primario-blanco span, .contacto .texto-primario-blanco span, .contenido-metroplanes .texto-primario-blanco span, .tarifas .texto-primario-blanco span, .pagos .texto-primario-blanco span {
+      font-family: 'montserratbold',sans-serif !important; }
+  .metroplanes .texto-seguridad, .nubes .texto-seguridad, .metroambientalistas .texto-seguridad, .bggray .texto-seguridad, .quienes .texto-seguridad, .metroplan .texto-seguridad, .header .texto-seguridad, .headerS .texto-seguridad, .headerR .texto-seguridad, .headerO .texto-seguridad, .concept .texto-seguridad, .video .texto-seguridad, .mapa .texto-seguridad, .video-left .texto-seguridad, .bloque-seguridad .texto-seguridad, .contacto .texto-seguridad, .contenido-metroplanes .texto-seguridad, .tarifas .texto-seguridad, .pagos .texto-seguridad {
+    font-family: 'montserratlight',sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 17px; }
+  .metroplanes .titulo-fondo-verde, .nubes .titulo-fondo-verde, .metroambientalistas .titulo-fondo-verde, .bggray .titulo-fondo-verde, .quienes .titulo-fondo-verde, .metroplan .titulo-fondo-verde, .header .titulo-fondo-verde, .headerS .titulo-fondo-verde, .headerR .titulo-fondo-verde, .headerO .titulo-fondo-verde, .concept .titulo-fondo-verde, .video .titulo-fondo-verde, .mapa .titulo-fondo-verde, .video-left .titulo-fondo-verde, .bloque-seguridad .titulo-fondo-verde, .contacto .titulo-fondo-verde, .contenido-metroplanes .titulo-fondo-verde, .tarifas .titulo-fondo-verde, .pagos .titulo-fondo-verde {
+    font-family: 'montserratbold',sans-serif;
+    color: #fff;
+    padding: 10px 10px;
+    background-color: #BDD44D;
+    font-size: 20px;
+    display: inline; }
+  .metroplanes .titulo-fondo-cyan, .nubes .titulo-fondo-cyan, .metroambientalistas .titulo-fondo-cyan, .bggray .titulo-fondo-cyan, .quienes .titulo-fondo-cyan, .metroplan .titulo-fondo-cyan, .header .titulo-fondo-cyan, .headerS .titulo-fondo-cyan, .headerR .titulo-fondo-cyan, .headerO .titulo-fondo-cyan, .concept .titulo-fondo-cyan, .video .titulo-fondo-cyan, .mapa .titulo-fondo-cyan, .video-left .titulo-fondo-cyan, .bloque-seguridad .titulo-fondo-cyan, .contacto .titulo-fondo-cyan, .contenido-metroplanes .titulo-fondo-cyan, .tarifas .titulo-fondo-cyan, .pagos .titulo-fondo-cyan {
+    font-family: 'montserratbold',sans-serif;
+    color: #fff;
+    padding: 13px 10px;
+    margin: 12px 0 35px 0;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #46A1DB; }
+  .metroplanes .texto-legal, .nubes .texto-legal, .metroambientalistas .texto-legal, .bggray .texto-legal, .quienes .texto-legal, .metroplan .texto-legal, .header .texto-legal, .headerS .texto-legal, .headerR .texto-legal, .headerO .texto-legal, .concept .texto-legal, .video .texto-legal, .mapa .texto-legal, .video-left .texto-legal, .bloque-seguridad .texto-legal, .contacto .texto-legal, .contenido-metroplanes .texto-legal, .tarifas .texto-legal, .pagos .texto-legal {
+    font-family: 'montserratlight',sans-serif;
+    color: #9B9B9B;
+    font-size: 9px;
+    background-color: #F9F9F9;
+    padding: 40px;
+    margin-top: 60px; }
+  .metroplanes .subtitulo-uno, .metroplanes .texto-prevolante, .nubes .subtitulo-uno, .nubes .texto-prevolante, .metroambientalistas .subtitulo-uno, .metroambientalistas .texto-prevolante, .bggray .subtitulo-uno, .bggray .texto-prevolante, .quienes .subtitulo-uno, .quienes .texto-prevolante, .metroplan .subtitulo-uno, .metroplan .texto-prevolante, .header .subtitulo-uno, .header .texto-prevolante, .headerS .subtitulo-uno, .headerS .texto-prevolante, .headerR .subtitulo-uno, .headerR .texto-prevolante, .headerO .subtitulo-uno, .headerO .texto-prevolante, .concept .subtitulo-uno, .concept .texto-prevolante, .video .subtitulo-uno, .video .texto-prevolante, .mapa .subtitulo-uno, .mapa .texto-prevolante, .video-left .subtitulo-uno, .video-left .texto-prevolante, .bloque-seguridad .subtitulo-uno, .bloque-seguridad .texto-prevolante, .contacto .subtitulo-uno, .contacto .texto-prevolante, .contenido-metroplanes .subtitulo-uno, .contenido-metroplanes .texto-prevolante, .tarifas .subtitulo-uno, .tarifas .texto-prevolante, .pagos .subtitulo-uno, .pagos .texto-prevolante {
+    font-family: 'montserratbold',sans-serif;
+    font-size: 25px;
+    color: #3669A3;
+    text-align: center;
+    margin: 20px 0 0 0; }
+  .metroplanes .texto-prevolante, .nubes .texto-prevolante, .metroambientalistas .texto-prevolante, .bggray .texto-prevolante, .quienes .texto-prevolante, .metroplan .texto-prevolante, .header .texto-prevolante, .headerS .texto-prevolante, .headerR .texto-prevolante, .headerO .texto-prevolante, .concept .texto-prevolante, .video .texto-prevolante, .mapa .texto-prevolante, .video-left .texto-prevolante, .bloque-seguridad .texto-prevolante, .contacto .texto-prevolante, .contenido-metroplanes .texto-prevolante, .tarifas .texto-prevolante, .pagos .texto-prevolante {
+    color: #9B9B9B;
+    margin: 75px 0 40px 0; }
+  .metroplanes .btn-primario, .nubes .btn-primario, .metroambientalistas .btn-primario, .bggray .btn-primario, .quienes .btn-primario, .metroplan .btn-primario, .header .btn-primario, .headerS .btn-primario, .headerR .btn-primario, .headerO .btn-primario, .concept .btn-primario, .video .btn-primario, .mapa .btn-primario, .video-left .btn-primario, .bloque-seguridad .btn-primario, .contacto .btn-primario, .contenido-metroplanes .btn-primario, .tarifas .btn-primario, .pagos .btn-primario {
+    background: #BDD44D;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 5px;
+    padding: 15px 35px;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+    text-align: center; }
+    .metroplanes .btn-primario:hover, .nubes .btn-primario:hover, .metroambientalistas .btn-primario:hover, .bggray .btn-primario:hover, .quienes .btn-primario:hover, .metroplan .btn-primario:hover, .header .btn-primario:hover, .headerS .btn-primario:hover, .headerR .btn-primario:hover, .headerO .btn-primario:hover, .concept .btn-primario:hover, .video .btn-primario:hover, .mapa .btn-primario:hover, .video-left .btn-primario:hover, .bloque-seguridad .btn-primario:hover, .contacto .btn-primario:hover, .contenido-metroplanes .btn-primario:hover, .tarifas .btn-primario:hover, .pagos .btn-primario:hover {
+      text-decoration: none; }
+  .metroplanes input[type="submit"].btn-enviar, .nubes input[type="submit"].btn-enviar, .metroambientalistas input[type="submit"].btn-enviar, .bggray input[type="submit"].btn-enviar, .quienes input[type="submit"].btn-enviar, .metroplan input[type="submit"].btn-enviar, .header input[type="submit"].btn-enviar, .headerS input[type="submit"].btn-enviar, .headerR input[type="submit"].btn-enviar, .headerO input[type="submit"].btn-enviar, .concept input[type="submit"].btn-enviar, .video input[type="submit"].btn-enviar, .mapa input[type="submit"].btn-enviar, .video-left input[type="submit"].btn-enviar, .bloque-seguridad input[type="submit"].btn-enviar, .contacto input[type="submit"].btn-enviar, .contenido-metroplanes input[type="submit"].btn-enviar, .tarifas input[type="submit"].btn-enviar, .pagos input[type="submit"].btn-enviar {
+    background: none;
+    border: 0;
+    color: inherit;
+    background: #BDD44D;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 5px;
+    padding: 5px 35px;
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800; }
+  .metroplanes .caja-tabla, .nubes .caja-tabla, .metroambientalistas .caja-tabla, .bggray .caja-tabla, .quienes .caja-tabla, .metroplan .caja-tabla, .header .caja-tabla, .headerS .caja-tabla, .headerR .caja-tabla, .headerO .caja-tabla, .concept .caja-tabla, .video .caja-tabla, .mapa .caja-tabla, .video-left .caja-tabla, .bloque-seguridad .caja-tabla, .contacto .caja-tabla, .contenido-metroplanes .caja-tabla, .tarifas .caja-tabla, .pagos .caja-tabla {
+    text-align: center; }
+    .metroplanes .caja-tabla .table, .nubes .caja-tabla .table, .metroambientalistas .caja-tabla .table, .bggray .caja-tabla .table, .quienes .caja-tabla .table, .metroplan .caja-tabla .table, .header .caja-tabla .table, .headerS .caja-tabla .table, .headerR .caja-tabla .table, .headerO .caja-tabla .table, .concept .caja-tabla .table, .video .caja-tabla .table, .mapa .caja-tabla .table, .video-left .caja-tabla .table, .bloque-seguridad .caja-tabla .table, .contacto .caja-tabla .table, .contenido-metroplanes .caja-tabla .table, .tarifas .caja-tabla .table, .pagos .caja-tabla .table {
+      text-align: center;
+      background-color: #3669A3; }
+      .metroplanes .caja-tabla .table tr th, .nubes .caja-tabla .table tr th, .metroambientalistas .caja-tabla .table tr th, .bggray .caja-tabla .table tr th, .quienes .caja-tabla .table tr th, .metroplan .caja-tabla .table tr th, .header .caja-tabla .table tr th, .headerS .caja-tabla .table tr th, .headerR .caja-tabla .table tr th, .headerO .caja-tabla .table tr th, .concept .caja-tabla .table tr th, .video .caja-tabla .table tr th, .mapa .caja-tabla .table tr th, .video-left .caja-tabla .table tr th, .bloque-seguridad .caja-tabla .table tr th, .contacto .caja-tabla .table tr th, .contenido-metroplanes .caja-tabla .table tr th, .tarifas .caja-tabla .table tr th, .pagos .caja-tabla .table tr th {
+        vertical-align: middle;
+        font-size: 12px;
+        text-align: center;
+        border-top: 0;
+        padding: 18px 5px;
+        border-right: 1px solid #A1BB26; }
+        .metroplanes .caja-tabla .table tr th:last-child, .nubes .caja-tabla .table tr th:last-child, .metroambientalistas .caja-tabla .table tr th:last-child, .bggray .caja-tabla .table tr th:last-child, .quienes .caja-tabla .table tr th:last-child, .metroplan .caja-tabla .table tr th:last-child, .header .caja-tabla .table tr th:last-child, .headerS .caja-tabla .table tr th:last-child, .headerR .caja-tabla .table tr th:last-child, .headerO .caja-tabla .table tr th:last-child, .concept .caja-tabla .table tr th:last-child, .video .caja-tabla .table tr th:last-child, .mapa .caja-tabla .table tr th:last-child, .video-left .caja-tabla .table tr th:last-child, .bloque-seguridad .caja-tabla .table tr th:last-child, .contacto .caja-tabla .table tr th:last-child, .contenido-metroplanes .caja-tabla .table tr th:last-child, .tarifas .caja-tabla .table tr th:last-child, .pagos .caja-tabla .table tr th:last-child {
+          border-right: 0; }
+      .metroplanes .caja-tabla .table tr th.primero, .nubes .caja-tabla .table tr th.primero, .metroambientalistas .caja-tabla .table tr th.primero, .bggray .caja-tabla .table tr th.primero, .quienes .caja-tabla .table tr th.primero, .metroplan .caja-tabla .table tr th.primero, .header .caja-tabla .table tr th.primero, .headerS .caja-tabla .table tr th.primero, .headerR .caja-tabla .table tr th.primero, .headerO .caja-tabla .table tr th.primero, .concept .caja-tabla .table tr th.primero, .video .caja-tabla .table tr th.primero, .mapa .caja-tabla .table tr th.primero, .video-left .caja-tabla .table tr th.primero, .bloque-seguridad .caja-tabla .table tr th.primero, .contacto .caja-tabla .table tr th.primero, .contenido-metroplanes .caja-tabla .table tr th.primero, .tarifas .caja-tabla .table tr th.primero, .pagos .caja-tabla .table tr th.primero {
+        border-radius: 10px 0 0 0; }
+      .metroplanes .caja-tabla .table tr th.ultimo, .nubes .caja-tabla .table tr th.ultimo, .metroambientalistas .caja-tabla .table tr th.ultimo, .bggray .caja-tabla .table tr th.ultimo, .quienes .caja-tabla .table tr th.ultimo, .metroplan .caja-tabla .table tr th.ultimo, .header .caja-tabla .table tr th.ultimo, .headerS .caja-tabla .table tr th.ultimo, .headerR .caja-tabla .table tr th.ultimo, .headerO .caja-tabla .table tr th.ultimo, .concept .caja-tabla .table tr th.ultimo, .video .caja-tabla .table tr th.ultimo, .mapa .caja-tabla .table tr th.ultimo, .video-left .caja-tabla .table tr th.ultimo, .bloque-seguridad .caja-tabla .table tr th.ultimo, .contacto .caja-tabla .table tr th.ultimo, .contenido-metroplanes .caja-tabla .table tr th.ultimo, .tarifas .caja-tabla .table tr th.ultimo, .pagos .caja-tabla .table tr th.ultimo {
+        border-radius: 0 10px 0 0; }
+      .metroplanes .caja-tabla .table tr td, .nubes .caja-tabla .table tr td, .metroambientalistas .caja-tabla .table tr td, .bggray .caja-tabla .table tr td, .quienes .caja-tabla .table tr td, .metroplan .caja-tabla .table tr td, .header .caja-tabla .table tr td, .headerS .caja-tabla .table tr td, .headerR .caja-tabla .table tr td, .headerO .caja-tabla .table tr td, .concept .caja-tabla .table tr td, .video .caja-tabla .table tr td, .mapa .caja-tabla .table tr td, .video-left .caja-tabla .table tr td, .bloque-seguridad .caja-tabla .table tr td, .contacto .caja-tabla .table tr td, .contenido-metroplanes .caja-tabla .table tr td, .tarifas .caja-tabla .table tr td, .pagos .caja-tabla .table tr td {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        border-top: 1px solid #2F5C8F;
+        border-right: 1px solid #2F5C8F; }
+        .metroplanes .caja-tabla .table tr td:last-child, .nubes .caja-tabla .table tr td:last-child, .metroambientalistas .caja-tabla .table tr td:last-child, .bggray .caja-tabla .table tr td:last-child, .quienes .caja-tabla .table tr td:last-child, .metroplan .caja-tabla .table tr td:last-child, .header .caja-tabla .table tr td:last-child, .headerS .caja-tabla .table tr td:last-child, .headerR .caja-tabla .table tr td:last-child, .headerO .caja-tabla .table tr td:last-child, .concept .caja-tabla .table tr td:last-child, .video .caja-tabla .table tr td:last-child, .mapa .caja-tabla .table tr td:last-child, .video-left .caja-tabla .table tr td:last-child, .bloque-seguridad .caja-tabla .table tr td:last-child, .contacto .caja-tabla .table tr td:last-child, .contenido-metroplanes .caja-tabla .table tr td:last-child, .tarifas .caja-tabla .table tr td:last-child, .pagos .caja-tabla .table tr td:last-child {
+          border-right: 0; }
+    .metroplanes .caja-tabla .volante img, .nubes .caja-tabla .volante img, .metroambientalistas .caja-tabla .volante img, .bggray .caja-tabla .volante img, .quienes .caja-tabla .volante img, .metroplan .caja-tabla .volante img, .header .caja-tabla .volante img, .headerS .caja-tabla .volante img, .headerR .caja-tabla .volante img, .headerO .caja-tabla .volante img, .concept .caja-tabla .volante img, .video .caja-tabla .volante img, .mapa .caja-tabla .volante img, .video-left .caja-tabla .volante img, .bloque-seguridad .caja-tabla .volante img, .contacto .caja-tabla .volante img, .contenido-metroplanes .caja-tabla .volante img, .tarifas .caja-tabla .volante img, .pagos .caja-tabla .volante img {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.21);
+      margin-bottom: 25px; }
+  .metroplanes .nopadding, .nubes .nopadding, .metroambientalistas .nopadding, .bggray .nopadding, .quienes .nopadding, .metroplan .nopadding, .header .nopadding, .headerS .nopadding, .headerR .nopadding, .headerO .nopadding, .concept .nopadding, .video .nopadding, .mapa .nopadding, .video-left .nopadding, .bloque-seguridad .nopadding, .contacto .nopadding, .contenido-metroplanes .nopadding, .tarifas .nopadding, .pagos .nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+/* videos */
+.video, .video-left {
+  margin: 50px auto; }
+
+/*header*/
+.header .caja, .headerS .caja, .headerR .caja, .headerO .caja {
+  padding: 15px 55px 0px 55px; }
+  .header .caja .titulo-fondo-verde, .headerS .caja .titulo-fondo-verde, .headerR .caja .titulo-fondo-verde, .headerO .caja .titulo-fondo-verde {
+    font-size: 28px; }
+  .header .caja .titulo-fondo-cyan, .headerS .caja .titulo-fondo-cyan, .headerR .caja .titulo-fondo-cyan, .headerO .caja .titulo-fondo-cyan {
+    font-size: 28px; }
+
+/* seguridad */
+.bloque-seguridad .block-seguridad {
+  background: #2A5789 url(../img/bg-nubes.png);
+  padding: 55px;
+  position: relative; }
+  .bloque-seguridad .block-seguridad img {
+    width: 100%;
+    position: absolute;
+    top: -55px;
+    left: 40px; }
+.bloque-seguridad .fondo-seguridad {
+  background-color: red; }
+
+/* tarifas */
+.tarifas {
+  padding: 55px 0 0 0; }
+  .tarifas .caja-tablas {
+    border: 2px solid #BDD44D;
+    padding: 20px;
+    text-align: center; }
+    .tarifas .caja-tablas .table {
+      color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #3669A3; }
+      .tarifas .caja-tablas .table th {
+        background-color: #BDD44D;
+        vertical-align: middle;
+        font-size: 12px;
+        text-align: center;
+        border-top: 0;
+        padding: 18px 5px;
+        border-right: 1px solid #A1BB26; }
+        .tarifas .caja-tablas .table th:last-child {
+          border-right: 0; }
+      .tarifas .caja-tablas .table th.primero {
+        border-radius: 10px 10px 0 0; }
+      .tarifas .caja-tablas .table th.ultimo {
+        border-radius: 0 10px 0 0; }
+      .tarifas .caja-tablas .table td {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        border-top: 1px solid #2F5C8F;
+        border-right: 1px solid #2F5C8F; }
+        .tarifas .caja-tablas .table td:last-child {
+          border-right: 0; }
+
+/* concept */
+.concept-foto {
+  margin: 50px 0; }
+
+.section-texto .antetitulo {
+  margin: 80px 0 30px 0; }
+.section-texto .sector {
+  margin-top: 50px !important; }
+
+/* video-left */
+.video-left {
+  vertical-align: bottom; }
+  .video-left .video-left-texto-center {
+    padding: 10px 45px 5px 31px; }
+  .video-left img {
+    margin-bottom: -3px; }
+
+.mapa .mapa-caja {
+  background-color: #F9F9F9;
+  padding: 55px 55px 15px 55px;
+  /* .texto-primario{
+  	color:$color-texto-titulos;
+  	font-size: 15px;
+  	font-family:'montserratbold',sans-serif;
+  	span{
+  		color:$color-verde;
+  	}
+  } */ }
+
+.nubes {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 13px; }
+  .nubes .beneBox p {
+    font-size: 14px; }
+
+.metroplanes {
+  margin-bottom: 60px; }
+
+.contenido-metroplanes .metroplanes-cuadro {
+  padding: 55px; }
+.contenido-metroplanes .data-metroplan {
+  padding: 0 15px; }
+.contenido-metroplanes .tabla-metroplanes {
+  color: #fff; }
+
+.content-two .subtitulo-uno {
+  margin: 50px 0; }
+
+/*tarifas*/
+.tarifas .caja-tarifas {
+  padding: 0 55px; }
+  .tarifas .caja-tarifas .texto-legal {
+    font-family: 'montserratlight',sans-serif;
+    color: #9B9B9B;
+    font-size: 9px;
+    margin-top: 30px;
+    background: none;
+    padding: 0;
+    margin-bottom: 80px; }
+
+/*contacto*/
+.contacto .caja-contacto {
+  background: url(../img/contacto-bg.jpg) top center no-repeat;
+  padding: 50px 55px 80px 55px; }
+  .contacto .caja-contacto .contenedor-form {
+    padding: 45px 60px;
+    background-color: #46A1DB;
+    height: 480px;
+    width: 650px;
+    margin: 20px auto;
+    text-align: center;
+    /* Rectangle: */
+    background: rgba(54, 105, 163, 0.7);
+    box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px; }
+    .contacto .caja-contacto .contenedor-form input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      border-radius: 5px;
+      border: 0; }
+      .contacto .caja-contacto .contenedor-form input[type="submit"] {
+        width: 215px;
+        text-align: center;
+        font-size: 15px; }
+
+/*pagos*/
+.pagos .caja-pagos {
+  padding: 0 55px; }
+
+/* Metroambientalistas */
+.metroambientalistas {
+  padding: 35px 55px !important; }
+
+.container {
+  max-width: 960px !important;
+  width: 960px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.container-all {
+  max-width: 960px !important;
+  position: relative; }
+  .container-all a.pestana {
+    position: fixed;
+    left: 0;
+    z-index: 99; }
+
+.expertos {
+  padding: 30px 55px 60px 55px;
+  background: transparent url("../img/bg-center.jpg") left top no-repeat; }
+  .expertos .logo_expertos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em; }
+  .expertos .hr {
+    border-top: 1px solid rgba(47, 64, 78, 0.46);
+    padding: 1.4em 0; }
+    .expertos .hr hr {
+      display: none; }
+  .expertos h1 {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 40px; }
+  .expertos p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'montserratlight', arial;
+    margin-bottom: 20px; }
+
+.bggray {
+  background-color: #EBEBEB;
+  padding: 30px 55px 60px 55px; }
+  .bggray .texto-caja-bggray {
+    width: 70%; }
+  .bggray .fotos-row {
+    margin-top: 10px; }
+    .bggray .fotos-row .imagen-thums {
+      border: 4px solid #ffffff;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5); }
+      .bggray .fotos-row .imagen-thums img {
+        width: 100%; }
+    .bggray .fotos-row .btn-primario-fotos {
+      background: #BDD44D;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.21);
+      border-radius: 5px;
+      padding: 15px 25px;
+      color: #ffffff;
+      display: block;
+      width: 100%;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 800;
+      text-align: center;
+      font-size: 15px; }
+      .bggray .fotos-row .btn-primario-fotos:hover {
+        text-decoration: none; }
+
+.quienes {
+  padding: 55px; }
+  .quienes .caja-quienes {
+    width: 35%; }
+    .quienes .caja-quienes .titulo-fondo-verde {
+      font-family: 'montserratbold',sans-serif;
+      color: #fff;
+      padding: 10px 5px;
+      background-color: #BDD44D;
+      font-size: 20px;
+      display: inline; }
+    .quienes .caja-quienes .titulo-fondo-cyan {
+      font-family: 'montserratbold',sans-serif;
+      color: #fff;
+      padding: 13px 5px;
+      margin: 12px 0 35px 0;
+      display: inline-block;
+      font-size: 20px;
+      background-color: #46A1DB; }
+  .quienes .color-quienes {
+    color: #3669A3;
+    font-size: 15px;
+    font-family: 'montserratbold', arial; }
+  .quienes .box-textos-quienes {
+    width: 350px;
+    margin-top: 25px; }
+  .quienes .textos-quienes {
+    font-size: 12px;
+    text-align: left;
+    font-family: 'montserratlight', arial;
+    line-height: 17px;
+    color: #9B9B9B; }
+
+.espace {
+  margin: 55px 0; }
+
+.content-one .volante .closer-a,
+.content-one .volante .closer-b, .content-two .volante .closer-a,
+.content-two .volante .closer-b {
+  background-color: #3669A3;
+  padding: 10px 20px;
+  color: #ffffff;
+  display: block !important;
+  clear: both;
+  text-align: center;
+  width: 15%;
+  margin: 10px auto 10px auto;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 30px; }
